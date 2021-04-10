@@ -17,17 +17,16 @@ io.on("connection", (socket) => {
     io.in(roomName).emit("newChat", data);
   });
 
+  // listens for someone typing
   socket.on("userIsTyping", (handle) => {
-    console.log('reached usertyping on server :>> ');
     io.in(roomName).emit("userIsTyping", handle);
   })
  
+  // listens for typing end
   socket.on("userNotTyping", () => {
-    console.log('reached NOTtyping on server :>> ');
     io.in(roomName).emit("userNotTyping");
   })
 
-  // Leave the room if the user closes the socket
   socket.on("disconnect", () => {
     socket.leave(roomName);
   });

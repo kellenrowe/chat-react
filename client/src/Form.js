@@ -20,11 +20,13 @@ function Form({ sendMsg, notifyTyping, removeTyping }) {
   const [formData, setFormData] = useState({ handle: "", msg: "" });
 
   function handleChange(evt) {
+    // handles formData update while typing
     const { name, value } = evt.target;
     setFormData((fData) => ({
       ...fData,
       [name]: value,
     }));
+    // handles typing notification
     if (formData.msg.length > 1) {
       notifyTyping(formData.handle);
     } else {

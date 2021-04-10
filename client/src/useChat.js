@@ -35,8 +35,7 @@ function useChat(roomName) {
       setIsTyping(false);
     });
 
-    // Destroys the socket reference
-    // when the connection is closed
+    // ends connection
     return () => {
       socketRef.current.disconnect();
     };
