@@ -1,0 +1,63 @@
+.Home-div {
+    height: 100vh;
+    width: 100vw;
+    background-color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formField {
+    position: relative;
+}
+
+.Home-input {
+    background-color: #1d1d1d;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: .12rem solid #828282c4;
+    color: whitesmoke;
+}
+
+.formLabel {
+    position: absolute;
+    top: 10px !important;
+    left: 0;
+    transition: .5s;
+    pointer-events: none;
+    color: #828282;
+}
+
+.Home-input:focus ~ label,
+.Home-input:valid ~ label {
+    top: -12px !important;
+    left: 0;
+    font-size: 12px;
+}
+
+.btnDiv {
+    margin-top: 30px;
+    height: fit-content;
+}
+
+.Home-btn {
+    padding: 10px 40px;
+    background-color: #1d1d1d;
+    border: 1px solid whitesmoke;
+    border-radius: 2px;
+    color: whitesmoke;
+}
+
+.Home-btn:hover {
+    text-decoration: none !important;
+    color: white;
+    background-color: #474eaf;
+    border: none;
+}
+
+.sub {
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: rgb(201, 201, 201);
+}

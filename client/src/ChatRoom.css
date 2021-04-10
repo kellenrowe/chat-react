@@ -1,0 +1,53 @@
+.ChatRoom{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ChatRoom-name {
+    color: #575fd8;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#msgBubbles {
+    padding: 10px;
+    /* border-radius: 20px; */
+    width: fit-content;
+    max-width: 50%;
+    margin-bottom: 10px;
+}
+
+.sent {
+    background-color: #474eaf;
+    border-radius: 20px 20px 0 20px;
+}
+
+.received {
+    background-color: #1d1d1d;
+    border-radius: 20px 20px 20px 0;
+}
+
+.ChatRoom-msgs {
+    position: relative;
+    min-height: 500px;
+    padding: 20px 20px;
+    background-color: #242424;
+    color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 3px 3px .5em .01em #474eaf, -3px -3px .5em .01em #474eaf, inset 0px 0px .4em #2e2e2e;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.isTypingDiv {
+    position: absolute;
+    bottom: 15px;
+    color: #a0a0a0;
+    font-weight: bold;
+    letter-spacing: 3px;
+}

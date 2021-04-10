@@ -1,0 +1,68 @@
+.ChatRoom {
+    height: 100vh;
+    width: 100vw;
+    background-color: #1d1d1d;
+}
+
+.sendBtn {
+    padding: 10px 0 10px 0;
+    background-color: #1d1d1d;
+    border: 1px solid whitesmoke;
+    border-radius: 2px;
+    color: whitesmoke;
+}
+
+.sendBtn:hover {
+    text-decoration: none !important;
+    color: white;
+    background-color: #474eaf;
+    border: 1px solid #474eaf;
+}
+
+.formField {
+    position: relative;
+}
+
+.Form-input {
+    background-color: #1d1d1d;
+    margin-top: 25px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    /* border-bottom: .12rem solid #828282c4; */
+    color: whitesmoke;
+}
+
+/* #msgInput {
+    border-bottom: none;
+} */
+
+.Form-formLabel {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: .5s;
+    pointer-events: none;
+    color: #a0a0a0;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.Form-input:focus ~ label,
+.Form-input:valid ~ label {
+    top: 15px;
+    left: 0;
+    font-size: 12px;
+}
+
+.Form-input:focus {
+    border-bottom: .12rem solid #5760d8b6;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #1d1d1d inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
