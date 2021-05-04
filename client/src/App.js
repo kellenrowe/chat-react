@@ -3,6 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./Home";
 import ChatRoom from "./ChatRoom";
 
+/** App Component
+ *
+ *  Props: NONE
+ *
+ *  State: NONE
+ *
+ *  App -> { ChatRoom -> { useChat(roomId), Form }, Home } 
+ */
 function App() {
   return (
     <Router>

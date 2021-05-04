@@ -35,12 +35,14 @@ function ChatRoom() {
     sendUserNotTyping();
   }
 
+  // could be const ?
   let typingNotification = isTyping
     ? (<div id="msgBubbles" className="received isTypingDiv">
         <p className="mb-0 px-1">...</p>
       </div>)
     : ("");
 
+  // could be const ?
   let currMsgs = messages.map((m, i) => (
     <div
       id="msgBubbles"
